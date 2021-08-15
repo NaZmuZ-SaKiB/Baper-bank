@@ -2,18 +2,11 @@
 // Nav Log in/ out functionality
 // ---------------------
 
-if (document.getElementById('dashboard').style.display === 'block') {
-    const navLink = document.getElementById('nav-link');
-    navLink.innerText = 'Log out';
-} else {
-    document.getElementById('nav-link').innerText = 'Log in';
-}
-
 document.getElementById('nav-link').addEventListener('click', () => {
     if (document.getElementById('dashboard').style.display === 'block') {
         document.getElementById('dashboard').style.display = 'none';
         document.getElementById('login-form').style.display = 'block';
-        navLink.innerText = 'Log in';
+        document.getElementById('nav-link').innerText = 'Log in';
     }
 })
 
@@ -32,6 +25,7 @@ document.getElementById('log-in-btn').addEventListener('click', (e) => {
             const dashBoard = document.getElementById('dashboard');
             form.style.display = 'none';
             dashBoard.style.display = 'block';
+            document.getElementById('nav-link').innerText = 'Log out';
         }
         else {
             alert('Wrong email or password')
