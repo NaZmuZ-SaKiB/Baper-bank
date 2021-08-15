@@ -132,3 +132,38 @@ form input::placeholder{
     border: 0;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    form{
+        padding: 1rem;
+        width: 90%;
+    }
+    form input{
+        width: 90%;
+        font-size: 1rem;
+        color: white;
+        padding: .5rem;
+        background: transparent ;
+        border: 0;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        margin-bottom: 1rem;
+    }
+    .input-group{
+        flex-direction: column;
+    }
+
+    .summary-container, .transaction-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .summary-item{
+        width: 100%;
+        padding: .5rem;
+        margin: 1rem;
+    }
+    .transaction-item{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}
