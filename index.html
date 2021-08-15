@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Baper Bank | Biggest Bank in BD</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h3>Baper Bank</h3>
+            <a class="nav-link" id="nav-link">Log in</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Baper Bank</h1>
+        <form id="login-form">
+            <h2>Log in</h2>
+            <div class="input-group">
+                <p>Email:</p>
+                <input type="email" id="email-input" placeholder="sakib@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <p>Password:</p>
+                <input type="password" id="password-input" placeholder="123456" required>
+            </div>
+            <button type="submit" class="btn" id="log-in-btn">Log in</button>
+        </form>
+        <section style="display:none" id="dashboard" class="dashboard">
+            <h2>Dashboard</h2>
+            <div class="summary-container">
+                <div class="summary-item deposit">
+                    <h2>Deposit</h2>
+                    <h1>$<span id="deposit-ammount">00</span></h1>
+                </div>
+                <div class="summary-item withdraw">
+                    <h2>Withdraw</h2>
+                    <h1>$<span id="withdraw-ammount">00</span></h1>
+                </div>
+                <div class="summary-item balance">
+                    <h2>Balance</h2>
+                    <h1>$<span id="balance-ammount">1200</span></h1>
+                </div>
+            </div>
+            <div class="transaction-container">
+                <div class="transaction-item deposit">
+                    <h3>Deposit Money</h3>
+                    <input type="text" id="diposit" placeholder="$ Deposit Amount">
+                    <button class="btn-dashboard" id="deposit-btn">Diposit</button>
+                </div>
+                <div class="transaction-item withdraw">
+                    <h3>Withdraw Money</h3>
+                    <input type="text" id="withdraw" placeholder="$ Withdraw Amount">
+                    <button class="btn-dashboard" id="withdraw-btn">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
