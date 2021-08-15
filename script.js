@@ -84,7 +84,8 @@ document.getElementById('withdraw-btn').addEventListener('click', () => {
         document.getElementById('balance-ammount').innerText = currentBalance - inputAmmount;
     }
     else if (currentBalance < inputAmmount) {
-        alert('! Not Enough Balance.')
+        alert('! Not Enough Balance.');
+        document.getElementById('withdraw').value = '';
     }
     else {
         document.getElementById('withdraw').value = '';
